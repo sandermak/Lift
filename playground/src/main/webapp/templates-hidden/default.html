@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+
+  <title>Nautica 05 Two column layout</title>
+
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="author" content="fullahead.org - studio7designs.com" />
+  <meta name="description" content="Site Description Here" />
+  <meta name="keywords" content="keywords, here" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="googlebot" content="noarchive" />
+
+  <link rel="stylesheet" type="text/css" href="/css/layout.css" media="screen, projection, tv " />
+  <link rel="stylesheet" type="text/css" href="/css/html.css" media="screen, projection, tv " />
+
+
+  <!-- Added for Lift App -->
+  
+  <script id="jquery" src="/classpath/jquery.js" type="text/javascript"/>
+  <script id="json" src="/classpath/json.js" type="text/javascript"/>
+
+  <!-- CSS specific to current theme -->
+  <link rel="stylesheet"           type="text/css" href="/css/light.css" title="light" media="screen, projection, tv " />
+  <link rel="alternate stylesheet" type="text/css" href="/css/dark.css"  title="dark"  media="screen, projection, tv " />
+
+
+</head>
+
+<body>
+
+<!-- #content: holds all except site footer - causes footer to stick to bottom -->
+<div id="content">
+
+  <!-- #header: holds the logo and top links -->
+  <div id="header" class="width">
+
+    <img src="/images/logo.gif" alt="Your logo goes here"/>
+
+    <lift:Menu.builder li_item:class="selectedItem" />
+      
+  </div>
+  <!-- #header end -->
+
+
+  <!-- #headerImg: holds the main header image or flash -->
+  <div id="headerImg" class="width"></div>
+
+
+
+
+<!-- #menu: the main large box site menu -->
+  <div id="menu" class="width">
+
+    <ul>
+      <li>
+        <a href="onecol.html" onfocus="blur()">
+          <span class="title ">One Column Layout</span>
+          <span class="desc">View the included layout</span>        </a>      </li>
+      <li>
+        <a href="twocol_a.html" class="forum" onfocus="blur()">
+          <span class="title ">Two Column Layout A</span>
+          <span class="desc style3">View the included layout</span>        </a>      </li>
+      <li>
+        <a href="twocol_b.html" onfocus="blur()">
+          <span class="title ">Two Column Layout B</span>
+          <span class="desc">View the included layout</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html" onfocus="blur()">
+          <span class="title ">Contact Us Layout</span>
+          <span class="desc">View the included layout</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- #menu end -->
+
+
+
+  <!-- #page: holds the page content -->
+  <div id="page">
+
+
+    <!-- #columns: holds the columns of the page -->
+    <div id="columns" class="widthPad">
+
+
+    <!-- Left thumbnail column -->
+    <div class="floatLeft width25">
+
+      <h2>Featured <span class="dark">Samples</span></h2>
+
+      <ul class="thumbs">
+        <li>
+          <a href="http://www.studio7designs.com" class="thumb"><img src="/images/thumbs/01.jpg" alt="STUDIO7DESIGNS LOGO"/><span>STUDIO7DESIGNS </span></a>        </li>
+		<li>
+          <a href="http://fullahead.org" title="goto FullAhead.org" class="thumb"><img src="/images/thumbs/fullahead.jpg" alt="fullahead 	logo"/><span>FullAhead Design </span></a>        </li>
+        
+        <li>
+          <a href="" class="thumb"><img src="/images/thumbs/03.jpg" alt="thumbnail"/><span>Image title sample </span></a>        </li>
+        <li>
+          <a href="" class="thumb"><img src="/images/thumbs/04.jpg" alt="thumbnail"/><span>Image title sample </span></a>        </li>
+        <li>
+          <a href="" class="thumb"><img src="/images/thumbs/05.jpg" alt="thumbnail"/><span>Image title sample </span></a>        </li>
+        <li>
+          <a href="" class="thumb"><img src="/images/thumbs/04.jpg" alt="thumbnail"/><span>Image title sample </span></a>        </li>
+        <li>
+          <a href="" class="thumb"><img src="/images/thumbs/02.jpg" alt="thumbnail"/><span>Image title sample </span></a>        </li>
+        <li>
+          <a href="" class="thumb"><img src="/images/thumbs/03.jpg" alt="thumbnail"/><span>Image title sample </span></a>        </li>
+		  <li>
+          <a href="" class="thumb"><img src="/images/thumbs/03.jpg" alt="thumbnail"/><span>Image title sample </span></a>        </li>
+      </ul>
+
+    </div>
+    <!-- Left thumbnails end -->
+
+
+    <!-- Right column -->
+    <div class="floatRight width75">
+
+      <!-- Added for Lift messages -->
+      <div>
+          <hr class="space" />
+      </div>
+
+      <h1><img alt="" id="ajax-loader" style="display:none; margin-bottom: 0px; margin-left: 5px" src="//images/ajax-loader.gif"/>Nautica 05 <span class="dark">Two column example</span></h1>
+      <lift:Msgs showAll="true"/>
+
+      <lift:bind name="content" />
+
+
+    </div>
+    <!-- #columns end -->
+
+  </div>
+  <!-- #page end -->
+  </div>
+</div>
+<!-- #content end -->
+
+
+
+
+<!-- #footer: holds the site footer (logo and links) -->
+<div id="footer">
+
+  <!-- #bg: applies the site width and footer background -->
+  <div id="bg" class="width">
+
+    <img src="/images/logo.gif" alt="Your logo goes here"/>
+
+    <ul>
+      <li><a href="">Design inspired by</a></li>
+      <li><a href="http://www.studio7designs.com" class="last">studio7designs.com</a></li>
+	</ul>
+
+  </div>
+  <!-- #bg end -->
+
+</div>
+<!-- #footer end -->
+
+</body>
+
+</html>

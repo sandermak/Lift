@@ -31,10 +31,10 @@ object HelloWorldTestSpecs extends Specification {
 
   "HelloWorld Snippet" should {
     "Put the time in the node" in {
-      val hello = new HelloWorld
+      val hello = new WelcomeSnippet
       Thread.sleep(1000) // make sure the time changes
 
-      val str = hello.howdy(<span>Hello at <b:time/></span>).toString
+      val str = hello.date(<span>Hello at <b:time/></span>).toString
 
       str.indexOf(stableTime.toString) must be >= 0
       str.indexOf("Hello at") must be >= 0

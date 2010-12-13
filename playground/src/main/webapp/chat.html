@@ -1,0 +1,18 @@
+<lift:surround with="default" at="content">
+    <p>Messages:</p>
+
+    <lift:comet type="ChatClient">
+        <div>
+            <ul>
+                <chat:messages />
+            </ul>
+            <chat:controls>
+               <input type="text" />
+               <input type="submit" value="Chat!" />
+               <input type="submit" value="Clear" /> 
+            </chat:controls>
+        </div>
+    </lift:comet>
+    
+</lift:surround>
+

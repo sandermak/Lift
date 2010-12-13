@@ -151,6 +151,7 @@ label {
   vertical-align: top;
 }
 
+button,
 input,
 textarea,
 select {
@@ -161,6 +162,8 @@ select {
   border: 1px solid #CCC;
 }
 
+button:focus,
+button:hover,
 input:focus,
 input:hover,
 textarea:focus,

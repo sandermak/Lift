@@ -10,6 +10,7 @@ import Helpers._
 import _root_.net.liftweb.mapper.{DB, ConnectionManager, Schemifier, DefaultConnectionIdentifier, StandardDBVendor}
 import _root_.java.sql.{Connection, DriverManager}
 import _root_.com.infosupport.model._
+import net.liftweb.widgets.autocomplete.AutoComplete
 
 
 /**
@@ -37,6 +38,9 @@ class Boot {
     // Build SiteMap
     def sitemap() = SiteMap(
       Menu("Home") / "index" :: // Simple menu form
+      Menu("Autocomplete") / "autocomplete" ::
+      Menu("Screen") / "screen" ::
+      Menu("Chat") / "chat" :: 
 
               // Menu entries for the User management stuff
               User.sitemap: _*)
@@ -60,6 +64,8 @@ class Boot {
     LiftRules.loggedInTest = Full(() => User.loggedIn_?)
 
     S.addAround(DB.buildLoanWrapper)
+
+    AutoComplete.init
   }
 
   /**

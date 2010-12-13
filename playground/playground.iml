@@ -6,7 +6,7 @@
         <option name="compilerLibraryLevel" value="Project" />
         <option name="compilerLibraryName" value="Maven: org.scala-lang:scala-compiler-bundle:2.8.1" />
         <option name="maximumHeapSize" value="1024" />
-        <option name="vmOptions" value="-DpackageLinkDefs=file:///Users/sbmak/Dev/LiftHot/playground/target/packageLinkDefs.properties" />
+        <option name="vmOptions" value="-DpackageLinkDefs=file:///Users/sbmak/Dev/Lift/playground/target/packageLinkDefs.properties" />
       </configuration>
     </facet>
   </component>
@@ -45,7 +45,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.7" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.scala-tools.testing:specs_2.8.0:1.6.5-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.scala-tools.testing:specs_2.8.0:1.6.6-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mortbay.jetty:jetty:6.1.26" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mortbay.jetty:jetty-util:6.1.26" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />

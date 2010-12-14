@@ -7,7 +7,7 @@
       <br />
       <br />      
 
-      <p>Example of a table that is filled dynamically:</p>
+      <p>Example of a dynamically filled table, using 'old-style' binding:</p>
       <table>
           <lift:welcomeSnippet.tableContents>
           <tr>
@@ -16,7 +16,16 @@
           </tr>
           </lift:welcomeSnippet.tableContents>
       </table>
-      <br />  
+      <br />
+      <p>Example of a dynamically filled table, using 'new-style' designer-friendly CSS binding:</p>
+      <table class="lift:welcomeSnippet.tableContentsCSS">
+          <tr class="naamRegel">
+              <td><span class="naam" /></td>
+              <td><span class="achternaam"/></td>
+          </tr>
+      </table>
+      <br />
+      <br />
       <lift:NameSnippet.sayHi>
           <t:message>Designer's message</t:message>
           <br />

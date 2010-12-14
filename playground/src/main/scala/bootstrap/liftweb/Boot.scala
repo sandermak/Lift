@@ -1,15 +1,9 @@
 package bootstrap.liftweb
 
-import _root_.net.liftweb.util._
-import _root_.net.liftweb.common._
-import _root_.net.liftweb.http._
-import _root_.net.liftweb.http.provider._
-import _root_.net.liftweb.sitemap._
-import _root_.net.liftweb.sitemap.Loc._
-import Helpers._
-import _root_.net.liftweb.mapper.{DB, ConnectionManager, Schemifier, DefaultConnectionIdentifier, StandardDBVendor}
-import _root_.java.sql.{Connection, DriverManager}
-import _root_.com.infosupport.model._
+import net.liftweb.common._
+import net.liftweb.http._
+import net.liftweb.http.provider._
+import net.liftweb.sitemap._
 import net.liftweb.widgets.autocomplete.AutoComplete
 
 
@@ -19,52 +13,29 @@ import net.liftweb.widgets.autocomplete.AutoComplete
  */
 class Boot {
   def boot {
-    if (!DB.jndiJdbcConnAvailable_?) {
-      val vendor =
-      new StandardDBVendor(Props.get("db.driver") openOr "org.h2.Driver",
-        Props.get("db.url") openOr
-                "jdbc:h2:lift_proto.db;AUTO_SERVER=TRUE",
-        Props.get("db.user"), Props.get("db.password"))
-
-      LiftRules.unloadHooks.append(vendor.closeAllConnections_! _)
-
-      DB.defineConnectionManager(DefaultConnectionIdentifier, vendor)
-    }
-
-    // where to search snippet
+    // where to search for snippets
     LiftRules.addToPackages("com.infosupport")
-    Schemifier.schemify(true, Schemifier.infoF _, User)
 
-    // Build SiteMap
+    // Build SiteMap. More info on sitemap: http://www.assembla.com/wiki/show/liftweb/SiteMap
     def sitemap() = SiteMap(
-      Menu("Home") / "index" :: // Simple menu form
-      Menu("Autocomplete") / "autocomplete" ::
-      Menu("Screen") / "screen" ::
-      Menu("Chat") / "chat" :: 
-
-              // Menu entries for the User management stuff
-              User.sitemap: _*)
+      Menu("Home") / "index",
+      Menu("Autocomplete") / "autocomplete",
+      Menu("Screen") / "screen",
+      Menu("Chat") / "chat")
 
     LiftRules.setSiteMapFunc(sitemap)
 
-    /*
-     * Show the spinny image when an Ajax call starts
-     */
+    // Show the spinny image when an Ajax call starts
     LiftRules.ajaxStart =
             Full(() => LiftRules.jsArtifacts.show("ajax-loader").cmd)
 
-    /*
-     * Make the spinny image go away when it ends
-     */
+    // Make the spinny image go away when it ends
     LiftRules.ajaxEnd =
             Full(() => LiftRules.jsArtifacts.hide("ajax-loader").cmd)
 
     LiftRules.early.append(makeUtf8)
 
-    LiftRules.loggedInTest = Full(() => User.loggedIn_?)
-
-    S.addAround(DB.buildLoanWrapper)
-
+    // Initialize a widget we want to use in our app.
     AutoComplete.init
   }
 

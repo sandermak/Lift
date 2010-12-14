@@ -24,14 +24,23 @@ class WelcomeSnippet {
   def date(in: NodeSeq): NodeSeq =
     Helpers.bind("b", in, "time" -> date2.toString)
 
+  // Some arbitrary data to fill our table
+  val persons = List(("voornaam 1", "achternaam 1"), ("voornaam 2", "achternaam 2"))
 
+  // Filling a dynamic table using bind() calls
   def tableContents(in: NodeSeq): NodeSeq = {
-    val persons = List(("voornaam 1", "achternaam 1"), ("voornaam2", "achternaam2"))
 
     // The following shows how we can repeatedly call bind to create new nodes.
     // Here, flatMap maps the function and concatenates the results into a single NodeSeq
     persons.flatMap(naam =>
       bind("t", in, "naam" -> naam._1, "achternaam" -> naam._2));
+  }
+
+  // Filling a dynamic table using the new CSS binding facilities. No more
+  // Lift tags necessary in the view!
+  def tableContentsCSS() = {
+    ".naamRegel *" #> persons.map(naam => ".naam"       #> naam._1 &
+                                          ".achternaam" #> naam._2)
   }
 
 }

@@ -189,6 +189,9 @@
       <module fileurl="file://$PROJECT_DIR$/neus.iml" filepath="$PROJECT_DIR$/neus.iml" />
     </modules>
   </component>
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
@@ -199,15 +202,15 @@
     <mapping directory="" vcs="" />
   </component>
   <component name="libraryTable">
-    <library name="Maven: org.scala-lang:scala-library:2.8.0">
+    <library name="Maven: com.h2database:h2:1.2.138">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.2.138/h2-1.2.138.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.2.138/h2-1.2.138-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.2.138/h2-1.2.138-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.thoughtworks.paranamer:paranamer:2.0">
@@ -221,28 +224,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/paranamer/paranamer/2.0/paranamer-2.0-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: javax.mail:mail:1.4.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4.1/mail-1.4.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4.1/mail-1.4.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4.1/mail-1.4.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: javax.activation:activation:1.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: commons-codec:commons-codec:1.4">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.4/commons-codec-1.4.jar!/" />
@@ -252,168 +233,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.h2database:h2:1.2.138">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.2.138/h2-1.2.138.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.2.138/h2-1.2.138-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.2.138/h2-1.2.138-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: javax.servlet:servlet-api:2.5">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: junit:junit:4.7">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.7/junit-4.7.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.7/junit-4.7-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.7/junit-4.7-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.scala-lang:scala-compiler:2.8.0">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.scala-lang:scala-compiler-bundle:2.8.0">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0.jar!/" />
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="Maven: net.liftweb:lift-mapper_2.8.0:2.2-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-mapper_2.8.0/2.2-SNAPSHOT/lift-mapper_2.8.0-2.2-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-mapper_2.8.0/2.2-SNAPSHOT/lift-mapper_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-mapper_2.8.0/2.2-SNAPSHOT/lift-mapper_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: net.liftweb:lift-proto_2.8.0:2.2-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-proto_2.8.0/2.2-SNAPSHOT/lift-proto_2.8.0-2.2-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-proto_2.8.0/2.2-SNAPSHOT/lift-proto_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-proto_2.8.0/2.2-SNAPSHOT/lift-proto_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: net.liftweb:lift-webkit_2.8.0:2.2-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-webkit_2.8.0/2.2-SNAPSHOT/lift-webkit_2.8.0-2.2-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-webkit_2.8.0/2.2-SNAPSHOT/lift-webkit_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-webkit_2.8.0/2.2-SNAPSHOT/lift-webkit_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: net.liftweb:lift-util_2.8.0:2.2-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-util_2.8.0/2.2-SNAPSHOT/lift-util_2.8.0-2.2-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-util_2.8.0/2.2-SNAPSHOT/lift-util_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-util_2.8.0/2.2-SNAPSHOT/lift-util_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: net.liftweb:lift-actor_2.8.0:2.2-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-actor_2.8.0/2.2-SNAPSHOT/lift-actor_2.8.0-2.2-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-actor_2.8.0/2.2-SNAPSHOT/lift-actor_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-actor_2.8.0/2.2-SNAPSHOT/lift-actor_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: net.liftweb:lift-common_2.8.0:2.2-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-common_2.8.0/2.2-SNAPSHOT/lift-common_2.8.0-2.2-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-common_2.8.0/2.2-SNAPSHOT/lift-common_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-common_2.8.0/2.2-SNAPSHOT/lift-common_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.slf4j:slf4j-api:1.6.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: net.liftweb:lift-json_2.8.0:2.2-SNAPSHOT">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.8.0/2.2-SNAPSHOT/lift-json_2.8.0-2.2-SNAPSHOT.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.8.0/2.2-SNAPSHOT/lift-json_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.8.0/2.2-SNAPSHOT/lift-json_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: joda-time:joda-time:1.6.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.6.2/joda-time-1.6.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.6.2/joda-time-1.6.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.6.2/joda-time-1.6.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-fileupload:commons-fileupload:1.2.2">
@@ -427,26 +246,59 @@
         <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: net.liftweb:lift-wizard_2.8.0:2.2-SNAPSHOT">
+    <library name="Maven: javax.activation:activation:1.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-wizard_2.8.0/2.2-SNAPSHOT/lift-wizard_2.8.0-2.2-SNAPSHOT.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-wizard_2.8.0/2.2-SNAPSHOT/lift-wizard_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-wizard_2.8.0/2.2-SNAPSHOT/lift-wizard_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: net.liftweb:lift-widgets_2.8.0:2.2-SNAPSHOT">
+    <library name="Maven: javax.mail:mail:1.4.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-widgets_2.8.0/2.2-SNAPSHOT/lift-widgets_2.8.0-2.2-SNAPSHOT.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4.1/mail-1.4.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-widgets_2.8.0/2.2-SNAPSHOT/lift-widgets_2.8.0-2.2-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4.1/mail-1.4.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-widgets_2.8.0/2.2-SNAPSHOT/lift-widgets_2.8.0-2.2-SNAPSHOT-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4.1/mail-1.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.servlet:servlet-api:2.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: joda-time:joda-time:1.6.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.6.2/joda-time-1.6.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.6.2/joda-time-1.6.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/1.6.2/joda-time-1.6.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:4.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.7/junit-4.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.7/junit-4.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.7/junit-4.7-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: log4j:log4j:1.2.16">
@@ -460,15 +312,103 @@
         <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.slf4j:slf4j-log4j12:1.6.1">
+    <library name="Maven: net.liftweb:lift-actor_2.8.1:2.2-RC1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-actor_2.8.1/2.2-RC1/lift-actor_2.8.1-2.2-RC1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-actor_2.8.1/2.2-RC1/lift-actor_2.8.1-2.2-RC1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-actor_2.8.1/2.2-RC1/lift-actor_2.8.1-2.2-RC1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.liftweb:lift-common_2.8.1:2.2-RC1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-common_2.8.1/2.2-RC1/lift-common_2.8.1-2.2-RC1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-common_2.8.1/2.2-RC1/lift-common_2.8.1-2.2-RC1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-common_2.8.1/2.2-RC1/lift-common_2.8.1-2.2-RC1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.liftweb:lift-json_2.8.1:2.2-RC1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.8.1/2.2-RC1/lift-json_2.8.1-2.2-RC1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.8.1/2.2-RC1/lift-json_2.8.1-2.2-RC1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.8.1/2.2-RC1/lift-json_2.8.1-2.2-RC1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.liftweb:lift-mapper_2.8.1:2.2-RC1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-mapper_2.8.1/2.2-RC1/lift-mapper_2.8.1-2.2-RC1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-mapper_2.8.1/2.2-RC1/lift-mapper_2.8.1-2.2-RC1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-mapper_2.8.1/2.2-RC1/lift-mapper_2.8.1-2.2-RC1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.liftweb:lift-proto_2.8.1:2.2-RC1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-proto_2.8.1/2.2-RC1/lift-proto_2.8.1-2.2-RC1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-proto_2.8.1/2.2-RC1/lift-proto_2.8.1-2.2-RC1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-proto_2.8.1/2.2-RC1/lift-proto_2.8.1-2.2-RC1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.liftweb:lift-util_2.8.1:2.2-RC1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-util_2.8.1/2.2-RC1/lift-util_2.8.1-2.2-RC1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-util_2.8.1/2.2-RC1/lift-util_2.8.1-2.2-RC1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-util_2.8.1/2.2-RC1/lift-util_2.8.1-2.2-RC1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.liftweb:lift-webkit_2.8.1:2.2-RC1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-webkit_2.8.1/2.2-RC1/lift-webkit_2.8.1-2.2-RC1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-webkit_2.8.1/2.2-RC1/lift-webkit_2.8.1-2.2-RC1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-webkit_2.8.1/2.2-RC1/lift-webkit_2.8.1-2.2-RC1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.liftweb:lift-widgets_2.8.1:2.2-RC1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-widgets_2.8.1/2.2-RC1/lift-widgets_2.8.1-2.2-RC1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-widgets_2.8.1/2.2-RC1/lift-widgets_2.8.1-2.2-RC1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-widgets_2.8.1/2.2-RC1/lift-widgets_2.8.1-2.2-RC1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.liftweb:lift-wizard_2.8.1:2.2-RC1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-wizard_2.8.1/2.2-RC1/lift-wizard_2.8.1-2.2-RC1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-wizard_2.8.1/2.2-RC1/lift-wizard_2.8.1-2.2-RC1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-wizard_2.8.1/2.2-RC1/lift-wizard_2.8.1-2.2-RC1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: nu.validator.htmlparser:htmlparser:1.2.1">
@@ -482,26 +422,97 @@
         <root url="jar://$MAVEN_REPOSITORY$/nu/validator/htmlparser/htmlparser/1.2.1/htmlparser-1.2.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.mortbay.jetty:jetty:6.1.16">
+    <library name="Maven: org.mortbay.jetty:jetty-util:6.1.26">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.16/jetty-6.1.16.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.16/jetty-6.1.16-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.16/jetty-6.1.16-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.mortbay.jetty:jetty-util:6.1.16">
+    <library name="Maven: org.mortbay.jetty:jetty:6.1.26">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.16/jetty-util-6.1.16.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.16/jetty-util-6.1.16-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.16/jetty-util-6.1.16-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.scala-lang:scala-compiler-bundle:2.8.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.0/scala-compiler-2.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Maven: org.scala-lang:scala-compiler-bundle:2.8.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.1/scala-compiler-2.8.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Maven: org.scala-lang:scala-compiler:2.8.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.1/scala-compiler-2.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.1/scala-compiler-2.8.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.8.1/scala-compiler-2.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.scala-lang:scala-library:2.8.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-log4j12:1.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

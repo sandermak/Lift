@@ -13,6 +13,12 @@ background-repeat:repeat-x;
 background-color:#3F2F22;
 font-family:'Helvetica', Arial, Verdana;
 }
+
+#lift__noticesContainer__ {
+  color: #A5051A;
+
+}
+
 #dvmaincontainer
 {
 width:900px;
@@ -60,7 +66,7 @@ padding:0px 0px 30px 0px;
 #dvtopcontainer #dvnavicontainer
 {
 float:right;
-width:395px;
+width:495px;
 font-size:0px;
 margin:0px;
 padding:0px 0px 0px 0px;
@@ -144,14 +150,14 @@ padding:0px 20px 0px 0px;
 #dvbodycontainer #dvleftpanel
 {
 float:left;
-width:274px;
+width:204px;
 margin:0px;
 padding:26px 0px 4px 25px;
 }
 #dvleftpanel #topimage
 {
 float:left;
-width:259px;
+width:189px;
 font-size:17px;
 margin:0px;
 padding:8px 0px 0px 15px;
@@ -168,7 +174,7 @@ line-height:18px;
 #dvleftpanel #midcont
 {
 float:left;
-width:247px;
+width:177px;
 margin:0px;
 padding:25px 0px 4px 25px;
 border-bottom:1px solid #F3F3F3;
@@ -178,7 +184,7 @@ border-right:1px solid #F3F3F3;
 #midcont p
 {
 float:left;
-width:223px;
+width:153px;
 font-size:15px;
 text-align:left;
 line-height:18px;
@@ -201,7 +207,7 @@ font-weight:bold;
 #dvleftpanel #leftfoot
 {
 float:left;
-width:258px;
+width:188px;
 background-image:url(../images/left_foot.jpg);
 background-repeat:no-repeat;
 background-position:top;
@@ -239,7 +245,7 @@ padding:5px 0px 5px 15px;
 #dvbodycontainer #dvrightpanel
 {
 float:left;
-width:552px;
+width:600px;
 margin:0px 0px 0px 20px;
 padding:18px 0px 4px 3px;
 }

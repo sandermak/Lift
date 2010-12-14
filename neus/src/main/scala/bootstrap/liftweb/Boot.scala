@@ -35,9 +35,21 @@ class Boot {
     LiftRules.addToPackages("com.infosupport")
     Schemifier.schemify(true, Schemifier.infoF _, User, Weekstaat, WeekstaatRegel)
 
+    // rewrite the weeknumber from a pretty url like /weekstaat/42 to a plain
+    // invocation of the /weekstaat view with 42 as weeknummer parameter (see the Map)
+    LiftRules.statelessRewrite.append {
+      case RewriteRequest(ParsePath(List("weekstaat",weeknummer),_,_,_),_,_) =>
+              RewriteResponse("weekstaat" :: Nil, Map("weeknummer" -> weeknummer))  }
+
+
+    val LoggedIn = If(
+          () => User.loggedIn_?,
+          () => RedirectWithState(User.loginPageURL, RedirectState(() => S.error("You must be logged in"))))
+
     // Build the sitemap
-    def sitemap() = SiteMap(
-      Menu("Home") / "index" :: // Simple menu form
+    def sitemap() = SiteMap(List(
+      Menu("Home") / "index", // Simple menu form
+      (Menu("Weekstaat") / "weekstaat" >> LoggedIn)) ++
       // Menu entries for the User management stuff
       User.sitemap: _*)  
 
@@ -64,16 +76,20 @@ class Boot {
   private def clearDb() {
     DB.runUpdate("DELETE FROM WEEKSTAAT_REGEL", Nil)
     DB.runUpdate("DELETE FROM WEEKSTAAT", Nil)
-    //DB.runUpdate("DELETE FROM USER", Nil)
+    DB.runUpdate("DELETE FROM USERS", Nil)
   }
 
   private def fillDb() {
-    val regel1 = WeekstaatRegel.create.code("Test").maandag(8).dinsdag(9)
-    val regel2 = WeekstaatRegel.create.code("ND").woensdag(8).donderdag(7).vrijdag(8)
-    val weekstaat = Weekstaat.create.weekNr(20)
-    weekstaat.regels += regel1
-    weekstaat.regels += regel2 
-    weekstaat.save
+    for(i <- 1 to 3) {
+      val user = User.create.email("lift" + i + "@lift.com").firstName("Test" + i).lastName("User").password("password")
+      val regel1 = WeekstaatRegel.create.code("Test" + i).maandag(8).dinsdag(9)
+      val regel2 = WeekstaatRegel.create.code("ND").woensdag(8).donderdag(7).vrijdag(8)
+      val weekstaat = Weekstaat.create.weekNr(20 + i)
+      weekstaat.regels += regel1
+      weekstaat.regels += regel2
+      user.weekstaten += weekstaat
+      user.validated(true).save
+    }
   }
 
   /**

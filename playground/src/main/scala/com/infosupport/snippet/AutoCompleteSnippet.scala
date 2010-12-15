@@ -15,8 +15,8 @@ object AutoCompleteSnippet {
   def queryData(current: String, limit: Int) =
     data.filter(_.toLowerCase.startsWith(current.toLowerCase))
 
-  def input(xhtml: NodeSeq) = {
-    bind("t", xhtml, "autofield" ->
-      AutoComplete("", queryData, v => S.notice("Submitted " + v)))
+  def input = {
+    "#autofield" #> AutoComplete("", queryData, v => S.notice("Submitted " + v))
   }
+
 }

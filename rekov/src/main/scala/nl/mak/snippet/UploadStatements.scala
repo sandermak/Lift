@@ -11,19 +11,20 @@ class UploadStatements {
 
   private object theUpload extends RequestVar[Box[FileParamHolder]](Empty)
 
-  private object uploadedStatements extends SessionVar[Box[Seq[Statement]]](Empty)
+  private object uploadedStatements extends RequestVar[Seq[Statement]](Nil)
 
   def upload = "#upload_button" #> SHtml.fileUpload(file => {
-    theUpload(Full(file)); processUpload
+    theUpload(Full(file));
+    processUpload
   })
 
-  def uploadResult = ".statement *" #> uploadedStatements.map( stat =>
-     ".account *" #> stat.account & ".amount *" #> stat.amount.toString & ".date *" #> stat.date.toString
+  def uploadResult = ".statement *" #> uploadedStatements.map(stat =>
+    ".account *" #> stat.account & ".amount *" #> stat.amount.toString & ".date *" #> stat.date.toString
   )
 
   def processUpload = {
-     uploadedStatements(theUpload.is.map(file => parseStatements(new String(file.file))))
-     S.redirectTo("uploadResult.html")
+    val statements = theUpload.is.map(file => parseStatements(new String(file.file))).openOr(Nil)
+    S.redirectTo("uploadResult.html", () => uploadedStatements(statements))
   }
 
 }

@@ -1,6 +1,5 @@
 package com.infosupport.snippet
 
-import xml.NodeSeq
 import net.liftweb.http.S
 import net.liftweb.util._
 import net.liftweb.widgets.autocomplete.AutoComplete

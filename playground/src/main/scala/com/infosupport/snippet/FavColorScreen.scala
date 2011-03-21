@@ -7,13 +7,13 @@ import net.liftweb.http.{S, LiftScreen}
  * Also see: http://www.assembla.com/wiki/show/liftweb/Lift's_Screen
  */
 
-object FavColor extends LiftScreen {
+object FavColorScreen extends LiftScreen {
 
-  val color = field("Favourite color?", "",
-                     valMinLen(2, "Too short"),
-                     valMaxLen(12, "Too long!"))
+  val color  = field("Favourite color?", "",
+                      valMinLen(2,  "Too short"),
+                      valMaxLen(12, "Too long!"))
 
-  val hue = radio("Hue", "", List("dark", "light"))
+  val hue    = radio("Hue", "", List("dark", "light"))
 
   val really = field("Really?", false)
 

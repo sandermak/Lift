@@ -1,19 +1,25 @@
-<lift:surround with="default" at="content" xmlns:lift="lift">
+<div class="lift:surround?with=default;at=content">
   <div class="lift:RecipeWiring">
       <table>
-          <th><tr><td>Description</td><td>Ingredient</td></tr></th>
+          <tr><th>Description</th><th>Ingredient</th></tr>
           <tbody class="lift:RecipeWiring.renderSteps">
           <tr class="step">
-              <td class="descr"><input type="text" value="Pour flower" /></td>
-              <td class="grams"><input type="text" value="150" /></td>
+              <td class="descr">Pour flower</td>
+              <td class="grams">150</td>
           </tr>
           </tbody>
       </table>
-      <button id="addLine">Add line</button>
+      <form class="lift:Form.ajax">
+          <input id="descrInput" type="text" />
+          <input id="gramsInput" type="text" />
+          <input id="addLine" type="hidden" />
+          <input type="submit" value="Add!" />
+      </form>
+      <button id="randomLine">Add random line</button>
       <hr />
-      Total grams: <span id="totalGrams">300</span>g<br/>
-      Total steps: <span id="totalSteps">3</span> steps
-
+      Total grams:  <b><span id="totalGrams">300</span>g    </b><br/>
+      Total steps:  <b><span id="totalSteps">3</span> steps </b><br />
+      Largest step: <b><span id="largest">Sugar</span></b>
   </div>
-</lift:surround>
+</div>
 

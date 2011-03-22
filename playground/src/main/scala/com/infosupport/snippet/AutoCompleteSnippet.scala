@@ -11,11 +11,11 @@ import Helpers._
 object AutoCompleteSnippet {
   val data = List("Green", "Red", "Yellow", "Blue", "Brown", "Pink", "Purple")
 
-  def queryData(current: String, limit: Int) =
+  def completeData(current: String, limit: Int) =
     data.filter(_.toLowerCase.startsWith(current.toLowerCase))
 
   def input = {
-    "#autofield" #> AutoComplete("", queryData, v => S.notice("Submitted " + v))
+    "#autofield" #> AutoComplete("", completeData, v => S.notice("Submitted " + v))
   }
 
 }

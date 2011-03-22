@@ -1,18 +1,18 @@
-<lift:surround with="default" at="content">
-    <p>Messages:</p>
+<div class="lift:surround?with=default;at=content">
 
-    <lift:comet type="ChatClient">
-        <div>
+    <p>Messages:</p>
+    <div class="lift:comet?type=ChatClient">
             <ul>
-                <chat:messages />
+                <li class="message">Oldest message</li>
+                <li class="clearable">Middel message</li>
+                <li class="clearable">Newest message</li>
             </ul>
-            <chat:controls>
-               <input type="text" />
-               <input type="submit" value="Chat!" />
-               <input type="submit" value="Clear" /> 
-            </chat:controls>
-        </div>
-    </lift:comet>
-    
-</lift:surround>
+            <form class="lift:Form.ajax">
+               <input id="msg" type="text" />
+               <input id="chat" type="submit" value="Chat!" />
+               <button name="Clear">Clear</button>
+            </form>
+    </div>
+
+</div>
 

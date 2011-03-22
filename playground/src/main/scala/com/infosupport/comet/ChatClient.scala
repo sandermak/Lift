@@ -1,30 +1,14 @@
 package com.infosupport.comet
 
-import net.liftweb.http.{ListenerManager, SHtml, CometListener, CometActor}
+import net.liftweb.http.{SHtml, CometListener, CometActor}
 import SHtml._
-import net.liftweb.actor.LiftActor
 import net.liftweb.http.js.JsCmds
 import JsCmds._
 import net.liftweb.common.Full
+import com.infosupport.lib.ChatServer
+import com.infosupport.lib.ChatServer._
+import net.liftweb.util.ClearClearable
 
-// The central chat server actor (singleton)
-object ChatServer extends LiftActor with ListenerManager {
-  private var msgs: List[String] = Nil
-
-  protected def createUpdate = msgs
-
-  // Actor message handling
-  override def highPriority = {
-    case Clear        => msgs = Nil;
-                         updateListeners()
-    case s: String
-      if s.length > 0 => msgs ::= s
-                         updateListeners()
-  }
-
-}
-
-case object Clear
 
 // Comet client - one instance per client page 
 class ChatClient extends CometActor with CometListener {
@@ -36,19 +20,14 @@ class ChatClient extends CometActor with CometListener {
 
   // Actor message handling
   override def highPriority = {
-    case m: List[String] => msgs = m; reRender(false)
+    case ChatMessages(chatMsgs) => msgs = chatMsgs; reRender(false)
   }
 
-  // Render controls that part of the screen that is
-  // enclosed by the <lift:comet type="ChatClient"> tag
   def render =
-    bind("messages" -> msgs.reverse.map(m => <li>{m}</li>),
-         "controls" -> ajaxForm(
-                            text("", s => ChatServer ! s)
-                         ++ <input type="submit" value="Chat!" />
-                         ++ ajaxButton("Clear", () =>
-                              { ChatServer ! Clear; Noop }))
-        )
+    "li"               #> msgs.reverse.map(m => "li *" #> m)             &
+    "#msg"             #> onSubmit(s => ChatServer ! s)                  &
+    "@Clear [onclick]" #> ajaxInvoke(() => { ChatServer ! Clear; Noop }) &
+    ClearClearable
 
 }
 

@@ -6,9 +6,6 @@ import net.liftweb.http.{S, StringField, IntField}
 /**
  * A wizard is composed of multiple screens. Try to create your own simple wizard
  * following the example code given in this class.
- *
- * Don't forget to create a corresponding view (html file) and register it in the
- * SiteMap! Look at the screen.html Screen example for inspiration.
  */
 object ExampleWizard extends Wizard {
 

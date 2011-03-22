@@ -1,37 +1,41 @@
-<lift:surround with="default" at="content" xmlns:lift="lift">
+<lift:surround with="default" at="content">
   <h2>Some simple examples</h2>
 
       <lift:welcomeSnippet.date>
-        <span>Welcome to the playground at <b:time>10:00:00 12/12/2010</b:time></span>
+        <div>Current date 'old-style' :<b:date>10:00:00 12/12/2010</b:date></div>
       </lift:welcomeSnippet.date>
-      <br />
+
+      <div class="lift:welcomeSnippet.dateCSS">
+        Current date 'CSS-style':<span id="date">10:00:00 12/12/2010</span>
+      </div>
       <br />      
 
       <p>Example of a dynamically filled table, using 'old-style' binding:</p>
-      <table>
+      <table class="table">
           <lift:welcomeSnippet.tableContents>
           <tr>
-              <td><t:naam /></td>
-              <td><t:achternaam /></td>
+              <td><t:firstName /></td>
+              <td><t:lastName /></td>
           </tr>
           </lift:welcomeSnippet.tableContents>
       </table>
       <br />
+
       <p>Example of a dynamically filled table, using 'new-style' designer-friendly CSS binding:</p>
-      <table class="lift:welcomeSnippet.tableContentsCSS">
-          <tr class="naamRegel">
-              <td><span class="naam" /></td>
-              <td><span class="achternaam"/></td>
+      <table class="table lift:welcomeSnippet.tableContentsCSS">
+          <tr class="nameLine">
+              <td><span class="firstName" /></td>
+              <td><span class="lastName"/></td>
           </tr>
       </table>
       <br />
       <br />
-      <lift:NameSnippet.sayHi>
-          <t:message>Designer's message</t:message>
-          <br />
-          <t:name>Sample name</t:name>
-          <t:button><input type="submit" /></t:button>
-      </lift:NameSnippet.sayHi>
+
+      <form method="POST" class="lift:NameSnippet.sayHi">
+          <div class="message">Designer's message</div>
+          <input id="nameInput" type="text" />
+          <input id="button" type="submit" />
+      </form>
 
 </lift:surround>
 

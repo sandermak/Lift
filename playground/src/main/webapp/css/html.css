@@ -200,6 +200,9 @@ input.radio {
   border: 0px;
 }
 
+.table td {
+  border: 1px solid;
+}
 
 
 

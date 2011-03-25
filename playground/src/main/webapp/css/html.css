@@ -147,7 +147,6 @@ form {
 /* If you're finding the input elements get pushed down, increase the width */
 label {
   float: left;
-  width: 25%;
   vertical-align: top;
 }
 
@@ -204,6 +203,19 @@ input.radio {
   border: 1px solid;
 }
 
+ul li.lift_error {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+li.lift_error {
+  color: red;
+
+}
+
+.lift_error {
+  color: red;
+}
 
 
 

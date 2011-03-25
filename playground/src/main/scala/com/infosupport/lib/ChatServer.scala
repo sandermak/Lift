@@ -14,7 +14,7 @@ object ChatServer extends LiftActor with ListenerManager {
 
   // Actor message handling
   override def highPriority = {
-    case Clear        => msgs = Nil; println("cleared!")
+    case Clear        => msgs = Nil
                          updateListeners()
     case s: String
       if s.length > 0 => msgs ::= s

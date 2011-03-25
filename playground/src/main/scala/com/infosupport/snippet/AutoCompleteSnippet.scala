@@ -1,9 +1,8 @@
 package com.infosupport.snippet
 
 import net.liftweb.http.S
-import net.liftweb.util._
 import net.liftweb.widgets.autocomplete.AutoComplete
-import Helpers._ 
+import xml.NodeSeq
 
 /**
  * Creating an autocomplete field using the AutoComplete widget
@@ -14,8 +13,7 @@ object AutoCompleteSnippet {
   def completeData(current: String, limit: Int) =
     data.filter(_.toLowerCase.startsWith(current.toLowerCase))
 
-  def input = {
-    "#autofield" #> AutoComplete("", completeData, v => S.notice("Submitted " + v))
-  }
+  def input(in: NodeSeq) =
+    AutoComplete("", completeData, v => S.notice("Submitted " + v))
 
 }

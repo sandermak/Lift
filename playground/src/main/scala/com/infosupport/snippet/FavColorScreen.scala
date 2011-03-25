@@ -6,12 +6,11 @@ import net.liftweb.http.{S, LiftScreen}
  * Form construction without writing your own snippets.
  * Also see: http://www.assembla.com/wiki/show/liftweb/Lift's_Screen
  */
-
 object FavColorScreen extends LiftScreen {
 
-  val color  = field("Favourite color?", "",
+  val color  = field("Favorite color?", "",
                       valMinLen(2,  "Too short"),
-                      valMaxLen(12, "Too long!"))
+                      valMaxLen(6, "Too long!"))
 
   val hue    = radio("Hue", "", List("dark", "light"))
 
@@ -19,7 +18,6 @@ object FavColorScreen extends LiftScreen {
 
   
   def finish() {
-    // Therefore we must extract the real value using the is method
     if(really.is)
       S.notice("I like " + hue.is + " " + color.is + " too!")
     else

@@ -1,28 +1,28 @@
 <lift:surround with="default" at="content">
   <h2>Some simple examples</h2>
 
-      <lift:welcomeSnippet.date>
+      <lift:indexSnippet.date>
         <div>Current date 'old-style' :<b:date>10:00:00 12/12/2010</b:date></div>
-      </lift:welcomeSnippet.date>
+      </lift:indexSnippet.date>
 
-      <div class="lift:welcomeSnippet.dateCSS">
+      <div class="lift:indexSnippet.dateCSS">
         Current date 'CSS-style':<span id="date">10:00:00 12/12/2010</span>
       </div>
       <br />      
 
       <p>Example of a dynamically filled table, using 'old-style' binding:</p>
       <table class="table">
-          <lift:welcomeSnippet.tableContents>
+          <lift:indexSnippet.tableContents>
           <tr>
               <td><t:firstName /></td>
               <td><t:lastName /></td>
           </tr>
-          </lift:welcomeSnippet.tableContents>
+          </lift:indexSnippet.tableContents>
       </table>
       <br />
 
       <p>Example of a dynamically filled table, using 'new-style' designer-friendly CSS binding:</p>
-      <table class="table lift:welcomeSnippet.tableContentsCSS">
+      <table class="table lift:indexSnippet.tableContentsCSS">
           <tr class="nameLine">
               <td><span class="firstName" /></td>
               <td><span class="lastName"/></td>

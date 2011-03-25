@@ -12,15 +12,15 @@ class Wiring {
 
   val amount1 = ValueCell(2)
   val fxRate  = ValueCell(0.5)
-  val amount2 = FuncCell(amount1, fxRate) { (amt, fx) => amt * fx }
+  val amount2 =
+    FuncCell(amount1, fxRate) { (amt, fx) => amt * fx }
 
   def render =
     "#amount1" #> SHtml.ajaxText(amount1.get.toString,
       amount => { amount1.set(Helpers.toInt(amount)); Noop }) &
     "#fxRate"  #> SHtml.ajaxText(fxRate.get.toString,
-      rate   => { fxRate.set(ParseDouble(rate)); Noop }) &
+      rate   => { fxRate.set(ParseDouble(rate)); Noop })      &
     "#amount2" #> WiringUI.asText(amount2, JqWiringSupport.fade)
-
 
 }
 
@@ -48,17 +48,17 @@ class RecipeWiring {
   def handleInputs = {
     var descr = ""
     var grams = 0
-    "#descrInput" #> SHtml.onSubmit(s => descr = s)                &
-    "#gramsInput" #> SHtml.onSubmit(s => grams = Helpers.toInt(s)) &
-    "#addLine"    #> SHtml.onSubmitUnit(() => { addStep(RecipeStep(descr, grams))
-                                                SetValById("descrInput", "") &
-                                                SetValById("gramsInput", "")
-                                              })
+    "#descrInput" #> SHtml.onSubmit(s =>   descr = s) &
+    "#gramsInput" #> SHtml.onSubmit(s => { grams = Helpers.toInt(s)
+                                           addStep(RecipeStep(descr, grams))
+                                           SetValById("descrInput", "") &
+                                           SetValById("gramsInput", "")
+                                         })
   }
 
   def renderSteps = WiringUI.toNode(steps) { (steps, in) =>
-    (".step *" #> steps.map(step => ".descr" #> step.descr &
-                                    ".grams" #> step.grams)).apply(in)
+    (".step" #> steps.map(step => ".descr *" #> step.descr &
+                                  ".grams *" #> step.grams)).apply(in)
   }
 
 }

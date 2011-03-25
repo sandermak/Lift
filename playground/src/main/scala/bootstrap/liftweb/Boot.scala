@@ -1,6 +1,5 @@
 package bootstrap.liftweb
 
-import net.liftweb.common._
 import net.liftweb.http._
 import net.liftweb.http.provider._
 import net.liftweb.sitemap._

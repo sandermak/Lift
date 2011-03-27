@@ -30,7 +30,8 @@ class Weekstaten {
                    ".woensdag"     #> regel.woensdag  &
                    ".donderdag"    #> regel.donderdag &
                    ".vrijdag"      #> regel.vrijdag   &
-                   ".regelTotaal"  #> regel.totaal.toString
+                   ".regelTotaal"  #> regel.totaal.toString &
+                    "sdfs" #> regel.report.is.doReport
                  }
       } & ".maandagTot"   #> weekstaat.totaalMaandag   &
           ".dinsdagTot"   #> weekstaat.totaalDinsdag   &

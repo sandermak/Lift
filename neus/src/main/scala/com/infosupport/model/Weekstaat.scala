@@ -35,6 +35,7 @@ class WeekstaatRegel extends LongKeyedMapper[WeekstaatRegel] with IdPK {
   object woensdag  extends MappedDecimal(this, MathContext.DECIMAL32, 1)
   object donderdag extends MappedDecimal(this, MathContext.DECIMAL32, 1)
   object vrijdag   extends MappedDecimal(this, MathContext.DECIMAL32, 1)
+  object report extends MappedEnum[WeekstaatRegel, Report.type](this, Report)
 
   def totaal = maandag.is + dinsdag.is + woensdag.is + donderdag.is + vrijdag.is
 

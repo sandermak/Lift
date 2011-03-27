@@ -6,12 +6,14 @@ import _root_.net.liftweb.common._
 import Helpers._
 import service.StatementParser._
 import net.liftweb.http._
+import nl.mak.model.Transaction._
+import java.sql.SQLException
 
 class UploadStatements {
 
   private object theUpload extends RequestVar[Box[FileParamHolder]](Empty)
 
-  private object uploadedStatements extends RequestVar[Seq[Statement]](Nil)
+  private object uploadedStatements extends RequestVar[Seq[ParsedTransaction]](Nil)
 
   def upload = "#upload_button" #> SHtml.fileUpload(file => {
     theUpload(Full(file));
@@ -23,8 +25,17 @@ class UploadStatements {
   )
 
   def processUpload = {
-    val statements = theUpload.is.map(file => parseStatements(new String(file.file))).openOr(Nil)
-    S.redirectTo("uploadResult.html", () => uploadedStatements(statements))
+    val transactions = theUpload.is.map(file => parseStatement(new String(file.file))).openOr(Nil)
+    var skipped = 0
+    var saved = 0
+
+    transactions.map { tx =>
+      tryo(List(classOf[SQLException]), Full((_:Throwable) => skipped += 1))  {
+        tx.save
+        saved += 1
+      }
+    }
+    S.redirectTo("uploadResult.html", () => S.notice("Saved " + saved + " transactions, skipped " + skipped + " duplicates"))
   }
 
 }

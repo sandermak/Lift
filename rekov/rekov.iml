@@ -13,7 +13,6 @@
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
@@ -24,8 +23,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: net.liftweb:lift-mapper_2.8.1:2.3-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: net.liftweb:lift-proto_2.8.1:2.3-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: net.liftweb:lift-webkit_2.8.1:2.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: net.liftweb:lift-db_2.8.1:2.3-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: net.liftweb:lift-util_2.8.1:2.3-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: net.liftweb:lift-actor_2.8.1:2.3-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: net.liftweb:lift-common_2.8.1:2.3-SNAPSHOT" level="project" />
@@ -38,6 +36,8 @@
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.4" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:1.6.2" level="project" />
     <orderEntry type="library" name="Maven: nu.validator.htmlparser:htmlparser:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: net.liftweb:lift-proto_2.8.1:2.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: net.liftweb:lift-webkit_2.8.1:2.3-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:0.9.26" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:0.9.26" level="project" />

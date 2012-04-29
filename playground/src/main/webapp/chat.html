@@ -1,18 +1,25 @@
-<div class="lift:surround?with=default;at=content">
+<html>
+<head>
+    <title>This title is ignored in real application!</title>
+</head>
+<body class="lift:content_id=indexContent">
+<div id="indexContent" class="lift:surround?with=default;at=content">
 
     <p>Messages:</p>
-    <div class="lift:comet?type=ChatClient">
-            <ul>
-                <li class="message">Oldest message</li>
-                <li class="clearable">Middle message</li>
-                <li class="clearable">Newest message</li>
-            </ul>
-            <form class="lift:Form.ajax">
-               <input id="message" type="text" />
-               <input id="chat" type="submit" value="Chat!" />
-               <button name="Clear">Clear</button>
-            </form>
-    </div>
 
+    <div class="lift:comet?type=ChatClient">
+        <ul>
+            <li class="message">Oldest message</li>
+            <li class="clearable">Middle message</li>
+            <li class="clearable">Newest message</li>
+        </ul>
+        <form class="lift:Form.ajax">
+            <input id="message" type="text"/>
+            <input id="chat" type="submit" value="Chat!"/>
+            <button name="Clear">Clear</button>
+        </form>
+    </div>
 </div>
 
+</body>
+</html>

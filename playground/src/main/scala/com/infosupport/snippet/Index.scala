@@ -11,24 +11,14 @@ class IndexSnippet {
 
   val currentDate = new Date().toString
 
-  def date(in: NodeSeq): NodeSeq =
-    Helpers.bind("b", in, "date" -> currentDate)
-
-  def dateCSS: NodeSeq => NodeSeq = "#date" #> currentDate
+  def date: NodeSeq => NodeSeq = "#date" #> currentDate
 
   // Some arbitrary data to fill our table
   val persons = List(("Martin", "Odersky"), ("David", "Pollak"))
 
-  // Filling a dynamic table using bind() calls
-  def tableContents(in: NodeSeq): NodeSeq = {
-    persons.flatMap(naam =>
-      bind("t", in, "firstName" -> naam._1,
-                    "lastName" -> naam._2));
-  }
-
   // Filling a dynamic table using the new CSS binding facilities. No more
   // Lift tags necessary in the view!
-  def tableContentsCSS() =
+  def tableContents =
     ".nameLine *" #> persons.map(name => ".firstName" #> name._1 &
                                          ".lastName"  #> name._2)
 

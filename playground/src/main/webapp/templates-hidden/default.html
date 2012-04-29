@@ -36,7 +36,7 @@
 
     <img src="/images/logo.gif" alt="Your logo goes here"/>
 
-    <lift:Menu.builder li_item:class="selectedItem" />
+    <div class="lift:Menu.builder?li_item:class=selectedItem" />
       
   </div>
   <!-- #header end -->
@@ -126,9 +126,11 @@
           <hr class="space" />
       </div>
 
-      <h1>Scala and Lift: <span class="dark"><lift:Menu.title /></span></h1>
+      <h1>Scala and Lift: <span class="dark">
+          <div class="lift:Menu.title" />
+      </span></h1>
       <img alt="" id="ajax-loader" style="display:none; width: 15px; height: 15px;  margin-bottom: 0px; margin-left: 5px" src="/images/ajax-loader.gif"/>
-      <lift:Msgs showAll="false"/>
+      <div class="lift:Msgs?showAll=false" />
 
       <lift:bind name="content" />
 

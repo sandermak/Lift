@@ -8,7 +8,6 @@ import com.infosupport.lib.ChatServer
 import com.infosupport.lib.ChatServer._
 import net.liftweb.util.ClearClearable
 
-
 // Comet client - one instance per client page 
 class ChatClient extends CometActor with CometListener {
   private var msgs: List[String] = Nil

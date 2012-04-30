@@ -16,8 +16,7 @@ class IndexSnippet {
   // Some arbitrary data to fill our table
   val persons = List(("Martin", "Odersky"), ("David", "Pollak"))
 
-  // Filling a dynamic table using the new CSS binding facilities. No more
-  // Lift tags necessary in the view!
+  // Filling a dynamic table using the CSS binding facilities.
   def tableContents =
     ".nameLine *" #> persons.map(name => ".firstName" #> name._1 &
                                          ".lastName"  #> name._2)
@@ -42,6 +41,3 @@ class NameSnippet {
   }
 
 }
-
-
-
